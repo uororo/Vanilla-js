@@ -1,0 +1,262 @@
+body {
+    background-color: #2c3e50;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0px 0px 82px 40px rgba(0,0,0,0.71);
+    font-family: 'Inter', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    width: 33%;
+    height: 100%;
+}
+
+.second-column,
+.third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-column {
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.71);
+}
+
+.third-column {
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.71);
+}
+  
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.greetings {
+    margin-top: 290px;
+    font-size: 55px;
+}
+
+.div-greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showing {
+    display: block;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+
+.js-clock {
+    position: absolute;
+    font-size: 70px;
+}
+
+.js-form input {
+    position: relative;
+    margin-top: 450px;
+    width: 260px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: 0.2s ease-in-out;
+}
+
+.js-form input:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.js-form input:focus {
+    border-color:rgba(255, 255, 255, 1);
+}
+
+.js-form input::placeholder {
+    opacity: 0.6;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+.js-form input:hover::placeholder {
+    opacity: 0.8;
+}
+
+.js-form input:focus::placeholder {
+    opacity: 0;
+}
+
+
+.name-changer {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 230px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.name-changer i {
+    transition: 0.6s ease-in-out;
+    opacity: 0.3;
+}
+
+.name-changer:hover i{
+    transform: rotate(-90deg);
+    opacity: 1;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 800px;
+    width: 400px;
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    backdrop-filter: blur( 14.0px );
+    -webkit-backdrop-filter: blur( 14.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.4s ease-in-out;
+}
+
+.hide-show-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.hide-show-btn:hover {
+    opacity: 0.7;
+}
+
+.js-toDoForm input {
+    width: 260px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+    color: white;
+}
+
+.js-toDoForm input:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.js-toDoForm input:focus {
+    border-color:rgba(255, 255, 255, 1);
+}
+
+.js-toDoForm input::placeholder {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+    opacity: 0.7;
+}
+
+.js-toDoForm input:hover::placeholder {
+    opacity: 1;
+}
+
+.js-toDoForm input:focus::placeholder {
+    opacity: 0;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+}
+
+i {
+    pointer-events: none;
+}
+
+.todo-btn {
+    position: absolute;
+    top: 50%;
+    transition: 0.4s ease-in-out;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.todo-btn:hover {
+    opacity: 0.7;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
