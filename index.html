@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Momentum
+    </title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/theme1.css"/>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14f7553cda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="first-column">
+            <div id="caleandar"></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="second-column">
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <div class="div-greetings">
+        <h4 class="js-greetings greetings"></h4>
+        <button class="name-changer hidden">
+            <i class="fas fa-undo"></i>
+        </button>
+        </div>
+        </div>
+        <div class="third-column">
+            <div class="todo-btn">ToDos</div>
+        <div class="todo-container hidden">
+            <div class="hide-show-btn">Hide</div>
+            <h1>Tasks</h1>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Add task" />
+            </form>
+            <h1>Pending</h1>
+            <ul class="js-toDoList"></ul>
+            <h1>Finished</h1>
+            <ul class="js-finishedList"></ul>
+        </div>
+        </div>
+    </div>
+    <span class='js-weather'></span>
+    <script src="calendar.js"></script>
+    <script src="demo.js"></script>
+    <script src="todos.js"></script>
+    <script src="clock.js"></script>
+    <script src="greetings.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html> 
